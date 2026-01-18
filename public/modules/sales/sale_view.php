@@ -1,6 +1,6 @@
 <?php
-require '../../includes/auth.php';
-require '../../config/database.php';
+require __DIR__ . '/../../../includes/auth.php';
+require __DIR__ . '/../../../config/database.php';
 
 $sale_id = $_GET['id'] ?? 0;
 $isModal = isset($_GET['modal']); // Verifica se foi chamado via AJAX para o Modal
@@ -47,7 +47,7 @@ $items = $stmtItems->fetchAll();
 
     <body>
         <?php $basePath = '../../';
-        include '../../includes/header.php'; ?>
+        include __DIR__ . '/../../../includes/header.php'; ?>
         <main>
         <?php endif; ?>
 

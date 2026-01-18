@@ -1,6 +1,6 @@
 <?php
-require '../../includes/auth.php';
-require '../../config/database.php';
+require __DIR__ . '/../../../includes/auth.php';
+require __DIR__ . '/../../../config/database.php';
 
 // Busca produtos
 $stmt = $pdo->prepare("SELECT id, name FROM products WHERE company_id = ?");
@@ -54,8 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body>
-    <?php $basePath = '../../';
-    include '../../includes/header.php'; ?>
+    <?php $basePath = '../../'; include __DIR__ . '/../../../includes/header.php'; ?>
     <main>
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
             <h2><i class="fas fa-dolly-flatbed"></i> Registrar Movimentação</h2>

@@ -1,7 +1,7 @@
 <?php
-require "../../config/database.php";
-require '../../includes/auth.php';
-require '../../includes/admin_only.php';
+require __DIR__ . '/../../../config/database.php';
+require __DIR__ . '/../../../includes/auth.php';
+require __DIR__ . '/../../../includes/admin_only.php';
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +16,7 @@ require '../../includes/admin_only.php';
 
 <body>
   <?php $basePath = '../../';
-  include '../../includes/header.php'; ?>
+  include __DIR__ . '/../../../includes/header.php'; ?>
 
   <main>
     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">

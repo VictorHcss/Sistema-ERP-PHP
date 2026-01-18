@@ -1,7 +1,8 @@
 <?php
 date_default_timezone_set('America/Sao_Paulo');
-require 'includes/auth.php';
-require 'config/database.php';
+require __DIR__ . '/../config/constants.php';
+require __DIR__ . '/../includes/auth.php';
+require __DIR__ . '/../config/database.php';
 
 $company_id = getCompanyId();
 
@@ -60,7 +61,8 @@ $percentualMeta = min(($totalSalesValue / $metaMensal) * 100, 100);
 
 <body>
     <?php $basePath = './';
-    include 'includes/header.php'; ?>
+    include __DIR__ . '/../includes/header.php';
+    ?>
 
     <main>
         <!-- Bem-vindo -->

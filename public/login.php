@@ -1,7 +1,6 @@
 <?php
 session_start();
-require "config/database.php";
-
+require __DIR__ . '/../config/database.php';
 $erro = "";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {

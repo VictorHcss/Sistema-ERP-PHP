@@ -1,7 +1,7 @@
 <?php
-require '../../includes/auth.php';
-require '../../includes/admin_only.php';
-require "../../config/database.php";
+require __DIR__ . '/../../../includes/auth.php';
+require __DIR__ . '/../../../includes/admin_only.php';
+require __DIR__ . '/../../../config/database.php';
 
 $id = $_GET['id'] ?? null;
 
@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body>
-    <?php $basePath = '../../'; include '../../includes/header.php'; ?>
+    <?php $basePath = '../../'; include __DIR__ . '/../../../includes/header.php'; ?>
 
     <main>
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">

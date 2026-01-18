@@ -1,6 +1,6 @@
 <?php
-require '../../includes/auth.php';
-require '../../config/database.php';
+require __DIR__ . '/../../../includes/auth.php';
+require __DIR__ . '/../../../config/database.php';
 
 // Clientes
 $stmt = $pdo->prepare("SELECT id, name FROM clients WHERE company_id = ?");
@@ -166,7 +166,7 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </head>
 
 <body>
-    <?php $basePath = '../../'; include '../../includes/header.php'; ?>
+    <?php $basePath = '../../'; include __DIR__ . '/../../../includes/header.php'; ?>
 
     <main>
         <div class="page-header">

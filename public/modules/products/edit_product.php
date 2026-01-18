@@ -1,6 +1,6 @@
 <?php
-require '../../includes/auth.php';
-require '../../config/database.php';
+require __DIR__ . '/../../../includes/auth.php';
+require __DIR__ . '/../../../config/database.php';
 
 $id = $_GET['id'] ?? 0;
 $stmt = $pdo->prepare("SELECT * FROM products WHERE id = ? AND company_id = ?");
@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-    <?php $basePath = '../../'; include '../../includes/header.php'; ?>
+    <?php $basePath = '../../'; include __DIR__ . '/../../../includes/header.php'; ?>
     <main>
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
             <h2><i class="fas fa-edit"></i> Editar Produto</h2>

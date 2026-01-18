@@ -1,7 +1,7 @@
 <?php
-require '../../includes/auth.php';
-require '../../includes/admin_only.php';
-require "../../config/database.php";
+require __DIR__ . '/../../../includes/auth.php';
+require __DIR__ . '/../../../includes/admin_only.php';
+require __DIR__ . '/../../../config/database.php';
 
 $id = $_GET['id'] ?? null;
 
